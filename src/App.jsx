@@ -2,7 +2,6 @@ import Banner from './components/Banner'
 import Cart from './components/Cart'
 import logo from './assets/logo.png'
 import ShoppingList from './components/ShoppingList'
-import PlantItem from './components/PlantItem'
 const App = () => {
     return (
         <div>

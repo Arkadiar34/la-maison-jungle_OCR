@@ -1,4 +1,5 @@
 import { plantList } from '../../datas/plantList'
+import CareScale from '../CareScale'
 import styles from './ShoppingList.module.css'
 
 const ShoppingList = () => {
@@ -19,6 +20,8 @@ const ShoppingList = () => {
 				{plantList.map((plant) => (
 					<li key={plant.id} className='lmj-plant-item'>
 						{plant.name}
+						<carescale caretype="water" scalevalue="{plant.water}">
+							<carescale caretype="light" scalevalue="{plant.light}"></carescale></carescale>
 						{plant.isSpecialOffer && <kbd className={styles.lmjSales}>Soldes</kbd>}
 					</li>
 				))}
